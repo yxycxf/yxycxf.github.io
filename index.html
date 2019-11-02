@@ -151,6 +151,83 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-一周知识点总结11-2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/02/%E4%B8%80%E5%91%A8%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%9311-2/">一周知识点总结11.2</a>
+    </h1>
+  
+
+        
+        <a href="/2019/11/02/%E4%B8%80%E5%91%A8%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%9311-2/" class="archive-article-date">
+  	<time datetime="2019-11-02T09:16:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这周因为一些事情没有坚持每天学习哈，知识点会少一些，写到晚上IG打FPX比赛之前应该写得完~</p>
+<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><ol>
+<li><a href="https://blog.csdn.net/qq_40413396/article/details/85163118" target="_blank" rel="noopener">IsValid函数基本用法</a>，在美团技术团队的<a href="https://tech.meituan.com/2018/09/27/fe-security.html" target="_blank" rel="noopener">前端安全</a>文章中曾提到使用白名单的方式阻止javascript:形式的连接以防范XSS攻击，其中就有用到IsValid(): <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">allowSchemes = [&quot;http&quot;, &quot;https&quot;];</span><br><span class="line"></span><br><span class="line">valid = isValid(getParameter(&quot;redirect_to&quot;), allowSchemes);</span><br><span class="line"></span><br><span class="line">if (valid) &#123;</span><br><span class="line">&lt;a href=&quot;&lt;%= escapeHTML(getParameter(&quot;redirect_to&quot;))%&gt;&quot;&gt;</span><br><span class="line">    跳转...</span><br><span class="line">&lt;/a&gt;</span><br><span class="line">&#125; else &#123;</span><br><span class="line">&lt;a href=&quot;/404&quot;&gt;</span><br><span class="line">    跳转...</span><br><span class="line">&lt;/a&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+ 等我把这篇文章完全理清楚了，会再写一篇来梳理其中知识点，现在功力不够，写不出来= =。</li>
+</ol>
+<ol start="2">
+<li><p><a href="https://blog.csdn.net/sophiafei_2000/article/details/78062036" target="_blank" rel="noopener">html 中设置背景图铺满整个页面</a>，这里用的是</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background: url(img/bg.jpeg)</span><br></pre></td></tr></table></figure>
+<p> 我之前面试的时候记错了，贼尴尬，记成background-image了。估计我这辈子都会记得。</p>
+</li>
+<li><p>使用<a href="https://element.eleme.cn/#/zh-CN" target="_blank" rel="noopener">Element-UI</a>的el-form来做登录界面的时候可以使用this.$refs.form.validate()来进行表单验证，然后我还看到了当在验证中使用if时必须使用callback()来执行判断后的函数，可看<a href="https://blog.csdn.net/m0_37791204/article/details/89675592" target="_blank" rel="noopener">这个</a>了解。然后this.$refs是Vue中把dom元素挂载到this.$refs上的写法，具体可看<a href="https://blog.csdn.net/wh710107079/article/details/88243638" target="_blank" rel="noopener">这里</a>。</p>
+</li>
+</ol>
+<hr>
+<p>写得有些敷衍，之后再补充啦，以后可能会每天写一点了，都挤在周六有点写不动，看比赛去了~</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/11/02/%E4%B8%80%E5%91%A8%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%9311-2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-一周知识点总结10-26" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -284,97 +361,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2019/10/21/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%9210-21-12-01/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-前端三板斧-一-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/21/%E5%89%8D%E7%AB%AF%E4%B8%89%E6%9D%BF%E6%96%A7-%E4%B8%80-1/">前端三板斧(一)</a>
-    </h1>
-  
-
-        
-        <a href="/2019/10/21/%E5%89%8D%E7%AB%AF%E4%B8%89%E6%9D%BF%E6%96%A7-%E4%B8%80-1/" class="archive-article-date">
-  	<time datetime="2019-10-21T02:57:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><ul>
-<li>知道前端到底是干啥的</li>
-<li>知道HTML+CSS是啥</li>
-<li>了解HTML+CSS的作用</li>
-<li>知道咋学HTML、CSS</li>
-</ul>
-<h3 id="前端到底是干啥的"><a href="#前端到底是干啥的" class="headerlink" title="前端到底是干啥的"></a>前端到底是干啥的</h3><ul>
-<li>前端，在以前的概念里（尤其是前后端不分离的刀耕火种时代），做的其实就只是网页的实现（只包括pc端），后来随着各种诸如RN（React Native）、Flutter这样的移动端框架的出现，在各种终端的面向用户的界面设计也都被称作前端，<strong>“大前端”</strong>。</li>
-</ul>
-<hr>
-<p>所以前端是所有程序员里最贴近用户的工种，所以也要求前端要有基本的产品思维和一定的审美，当然这些并不是决定性因素，有则当然好没有以后慢慢培养:P。</p>
-<h3 id="前端三板斧"><a href="#前端三板斧" class="headerlink" title="前端三板斧"></a>前端三板斧</h3><ul>
-<li>HTML</li>
-</ul>
-<hr>
-<p>即超文本标记语言（<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage），通俗点理解其实就是前端页面的容器，你可以把一个页面想象成一片沙滩，你想要往里放东西的话总要挖个坑出来，而HTML大多数时候就是你挖坑的那个铲子，在初学阶段你需要做的是把最基础的标签记下来、明白不同书写方式时他们的层级关系（嵌套、同级之类的），你就走过了HTML的第一个关卡。</p>
-<ul>
-<li>CSS</li>
-</ul>
-<hr>
-<p>层叠样式表（<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets）<br>当你用HTML把坑挖出来了以后，就会发现它其实只是一个坑，里面的东西还需要我们去填充，并且我们还要求这些东西要足够好看，用户的交互感强。这时候就是CSS发挥作用的时机了。</p>
-<p>在我现在看来CSS是前端学习中最难的一部分（要把它整得明明白白真的需要不小的努力），但好在它的学习曲线并不陡峭，你想要深入学习也许需要很多努力和一些灵光一闪，但它的入门并不会太难。</p>
-<p>推荐的链接：</p>
-<p><a href="https://www.imooc.com/learn/9" target="_blank" rel="noopener">慕课网</a></p>
-<p><a href="https://www.w3school.com.cn/" target="_blank" rel="noopener">w3school</a></p>
-<p><a href="https://www.runoob.com/" target="_blank" rel="noopener">菜鸟教程</a></p>
-<p>这几个教程都有在线IDE（集成开发环境），选择其一扎扎实实地写下自己的代码，所见即所得。这个过程不建议看视频和看书，第一是浪费时间，第二是我认为如果没有亲手写点BUG出来并且亲自把它修好的话，你是体会不到编程的乐趣的。当然你如果有自己的学习方法，推荐你看《Head First HTML+CSS》这本书，字大图多好理解。视频的话，市面上的视频都是大差不差的，就不推荐了。</p>
-<hr>
-<p>那么这次的博客先写到这，有空再写剩下的啦:O</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/21/%E5%89%8D%E7%AB%AF%E4%B8%89%E6%9D%BF%E6%96%A7-%E4%B8%80-1/">展开全文 >></a>
         </p>
       
 
