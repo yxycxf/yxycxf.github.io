@@ -173,10 +173,10 @@
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这周因为一些事情没有坚持每天学习哈，知识点会少一些，写到晚上IG打FPX比赛之前应该写得完~</p>
 <h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><ol>
-<li><a href="https://blog.csdn.net/qq_40413396/article/details/85163118" target="_blank" rel="noopener">IsValid函数基本用法</a>，在美团技术团队的<a href="https://tech.meituan.com/2018/09/27/fe-security.html" target="_blank" rel="noopener">前端安全</a>文章中曾提到使用白名单的方式阻止javascript:形式的连接以防范XSS攻击，其中就有用到IsValid(): <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">allowSchemes = [&quot;http&quot;, &quot;https&quot;];</span><br><span class="line"></span><br><span class="line">valid = isValid(getParameter(&quot;redirect_to&quot;), allowSchemes);</span><br><span class="line"></span><br><span class="line">if (valid) &#123;</span><br><span class="line">&lt;a href=&quot;&lt;%= escapeHTML(getParameter(&quot;redirect_to&quot;))%&gt;&quot;&gt;</span><br><span class="line">    跳转...</span><br><span class="line">&lt;/a&gt;</span><br><span class="line">&#125; else &#123;</span><br><span class="line">&lt;a href=&quot;/404&quot;&gt;</span><br><span class="line">    跳转...</span><br><span class="line">&lt;/a&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
- 等我把这篇文章完全理清楚了，会再写一篇来梳理其中知识点，现在功力不够，写不出来= =。</li>
-</ol>
-<ol start="2">
+<li><p><a href="https://blog.csdn.net/qq_40413396/article/details/85163118" target="_blank" rel="noopener">IsValid函数基本用法</a>，在美团技术团队的<a href="https://tech.meituan.com/2018/09/27/fe-security.html" target="_blank" rel="noopener">前端安全</a>文章中曾提到使用白名单的方式阻止javascript:形式的连接以防范XSS攻击，其中就有用到IsValid():</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">allowSchemes = [&quot;http&quot;, &quot;https&quot;];</span><br><span class="line"></span><br><span class="line">valid = isValid(getParameter(&quot;redirect_to&quot;), allowSchemes);</span><br><span class="line"></span><br><span class="line">if (valid) &#123;</span><br><span class="line">&lt;a href=&quot;&lt;%= escapeHTML(getParameter(&quot;redirect_to&quot;))%&gt;&quot;&gt;</span><br><span class="line">    跳转...</span><br><span class="line">&lt;/a&gt;</span><br><span class="line">&#125; else &#123;</span><br><span class="line">&lt;a href=&quot;/404&quot;&gt;</span><br><span class="line">    跳转...</span><br><span class="line">&lt;/a&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> 等我把这篇文章完全理清楚了，会再写一篇来梳理其中知识点，现在功力不够，写不出来= =。</p>
+</li>
 <li><p><a href="https://blog.csdn.net/sophiafei_2000/article/details/78062036" target="_blank" rel="noopener">html 中设置背景图铺满整个页面</a>，这里用的是</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background: url(img/bg.jpeg)</span><br></pre></td></tr></table></figure>
 <p> 我之前面试的时候记错了，贼尴尬，记成background-image了。估计我这辈子都会记得。</p>
@@ -266,7 +266,7 @@
 </li>
 </ol>
 <hr>
-<p>这篇博客写了两天才写完，主要还是昨天LOL比赛太过精彩XD，the shy太强了，希望小IG可以捶一次SKT！   </p>
+<p>这篇博客写了两天才写完，主要还是昨天LOL比赛太过精彩XD，等总决赛过去一定好好写！</p>
 
       
 
@@ -331,18 +331,18 @@
       
         <p>基本任务：</p>
 <ul>
-<li><input disabled="" type="checkbox"> 重新把《Javascript语言精粹》、《你不知道的Javascript（上）》、《JavascriptDOM编程艺术》通读一遍，并且写读书笔记转化成博客输出。</li>
+<li><input disabled="" type="checkbox"> 重新把《Javascript语言精粹》、《你不知道的Javascript（上）》、《JavascriptDOM编程艺术》通读一遍，并且写读书笔记转化成博客输出。(11.4更新:结果开始从头刷红宝书= =，计划可能要延期)</li>
 <li><input disabled="" type="checkbox"> 学习正则表达式。</li>
 </ul>
 <p>将来的计划：</p>
 <ol>
 <li>node.js</li>
-<li>vuex</li>
+<li>vuex(11.4更新:初步完成并且用到项目里了~)</li>
 <li>typescript</li>
-<li>读vue-element-admin源码</li>
+<li>读vue-element-admin源码(11.4更新:在读了在读了555大佬写的代码真是赏心悦目)</li>
 <li>学习设计模式</li>
 <li>学习Sql数据库</li>
-<li>golang</li>
+<li>golang(11.4更新:也可以是PHP)</li>
 <li>刷leetcode</li>
 <li>重读《计算机网络自顶向下方法》，尽量产出至博客</li>
 </ol>
@@ -417,6 +417,7 @@
 <li>3.还有一点就是我在学习的过程中会把自己的体会、心得、总结等写成文章发出来，也算是给自己的一个笔记本吧，可以预料到这部分的文章可能会出不少错误或者是个人片面的理解，但是我觉得年轻人还是要不怕犯错，写错了总比不写好，<del>大不了重写一篇=_=</del>。</li>
 </ul>
 <hr>
+<p><del>然后留着那个hello world主要是因为我怕忘了命令行= =</del></p>
 
       
 
