@@ -182,7 +182,25 @@
 <li><a href="https://blog.csdn.net/qq_35392549/article/details/89532042" target="_blank" rel="noopener">自定义header字段跨域报错问题</a></li>
 </ol>
 </li>
+<li><p>（这几天回了趟家，没来得及更新，赶紧补上~）这次来记录一下Vue中的插槽(slot)。<br> 通常我们在使用Vue组件时，是将组件以import方式引入后，再使用</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;child&gt;&lt;child/&gt;</span><br></pre></td></tr></table></figure>
+
+<p> 这种形式来写的，但这会有一个问题就是当父组件想控制子组<br> 中的 <strong>表现与否</strong>和<strong>表现形式</strong>时，将会遇到困难，能不能将其中的控制权交付给父组件呢？插槽应运而生。</p>
+<p> 匿名插槽与具名插槽</p>
+<p> 顾名思义，它不指定特定的名字，与之对应的当然是具名插槽，两者表现形式是:</p>
+<p> 匿名插槽</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;slot&gt;&lt;slot/&gt;</span><br></pre></td></tr></table></figure>
+
+<p> 具名插槽</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;slot name=&quot;slotname&quot;&gt;&lt;slot/&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
 </ol>
+<p>他们的用法是在父组件中的子组件标签之间书写HTML模板，并且在标签中加入”slot=’slotname’”来规定传输的组件名字，然后在子组件中写</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;slot name=&quot;slotname&quot;&gt;&lt;slot/&gt;</span><br></pre></td></tr></table></figure>
+<p>来接收父组件相同名字的slot，而如果没有写名字的话，就会接收父组件中没有写名字的div（如果有的话），如果父组件压根<strong>没写匿名插槽</strong>，它就不会表现出来，相当于没有这对slot标签。而如果<strong>在父组件多写了slot</strong>，而子组件还是写了一个的话，它会<strong>接收父组件所有的对应插槽并且从上到下表现一遍</strong>。</p>
+<p>还有作用域插槽和样式问题，等下次再写啦，我还要动手试试再写。然后学一下咋添加图片= =只有文字和代码段太乏力了。</p>
+<p>参考：<a href="https://segmentfault.com/a/1190000012996217#articleHeader4" target="_blank" rel="noopener">深入理解vue中的slot与slot-scope</a></p>
 
       
 
