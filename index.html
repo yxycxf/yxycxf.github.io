@@ -171,9 +171,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="一点迷茫"><a href="#一点迷茫" class="headerlink" title="一点迷茫"></a>一点迷茫</h3><p>最近对于自己真正想要什么产生了迷茫，从小就很喜欢专注而精于手艺的工匠，所以选了工科，又因为觉得编程这个手艺化腐朽为神奇选择坚持专业，又因为自己太菜找工作受挫，我知道自己应该继续坚持，但难免有一些难过，下周断更出去走一走回复一下心情好了。现阶段我打算给自己三年时间来确定我是不是真的可以走这条路，前段时间回家爸爸跟我聊了很多，我才意识到其实所有的压力都是我给自己的，他们只是希望我能开开心心罢了，开开心心啊，如此轻飘飘又如此沉重的盼望。</p>
-<p>尽力。</p>
-<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>上次说到作用域插槽，其实作用域插槽其意义在于：以数据来决定插槽的内容。而其中的数据由子组件提供在子组件私有的data中，并且在<slot>中使用:data绑定</p>
+        <h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>上次说到作用域插槽，其实作用域插槽其意义在于：以数据来决定插槽的内容。而其中的数据由子组件提供在子组件私有的data中，并且在<slot>中使用:data绑定</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;slot  :data=&quot;data&quot;&gt;&lt;/slot&gt;</span><br></pre></td></tr></table></figure>
 <p>然后在父组件中利用slot-scope接收数据,此处的”s”接收的是子组件中的数据，即大的data。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;ChildSlot&gt;</span><br><span class="line">                &lt;template slot-scope=&quot;s&quot; slot=&quot;aaa&quot;&gt;</span><br><span class="line">                    &lt;ul&gt;</span><br><span class="line">                        &lt;li v-for=&quot;item in s.data&quot; :key=&quot;item&quot;&gt;&#123;&#123;item&#125;&#125;&lt;/li&gt;</span><br><span class="line">                    &lt;/ul&gt;</span><br><span class="line">                &lt;/template&gt;</span><br><span class="line">            &lt;/ChildSlot&gt;</span><br></pre></td></tr></table></figure>
